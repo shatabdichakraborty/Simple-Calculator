@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="calculator.js"></script>
+</head>
+
+<body>
+    <table>
+        <tr>
+        <tr>
+            <td class="heading">
+                Simple Calculator
+            </td>
+        </tr>
+        <td>
+            <input type="text" id="input" placeholder="0" readonly="readonly">
+            <input type="text" id="answer" readonly="readonly" style="color:green;">
+        </td>
+        </tr>
+        <tr>
+            <td>
+                    <input type="button" value="CE" onclick="clearScreen()" style="color: white; background: red;">
+                    <input type="button" value="&#247;" onclick="getOperand('/')">
+                    <input type="button" value="x" onclick="getOperand('x')">
+                    <input type="button" value="&#8592;" onclick="backspace()" style="color: red;">
+                    <br>
+                <input type="button" value="1" onclick="getNumber(1)">
+                <input type="button" value="2" onclick="getNumber(2)">
+                <input type="button" value="3" onclick="getNumber(3)">
+                <input type="button" value="+" onclick="getOperand('+')">
+                <br>
+                <input type="button" value="4" onclick="getNumber(4)">
+                <input type="button" value="5" onclick="getNumber(5)">
+                <input type="button" value="6" onclick="getNumber(6)">
+                <input type="button" value="-" onclick="getOperand('-')">
+                <br>
+                <input type="button" value="7" onclick="getNumber(7)">
+                <input type="button" value="8" onclick="getNumber(8)">
+                <input type="button" value="9" onclick="getNumber(9)">
+                <input type="button" value="( )" onclick="brackets()">
+                <br>
+                <input type="button" value="+/-" onclick="getOperand('+/-')">
+                <input type="button" value="0" onclick="getNumber(0)">
+                <input type="button" value="=" onclick="compute()" style="width: 125px; color:white; background: green; ">
+                <br>
+            </td>
+        </tr>
+    </table>
+<h4 style="color: rgb(132, 6, 250); text-align:center">Shatabdi &copy; All Rights Reserved</h5>
+
+</body>
+
+</html>
